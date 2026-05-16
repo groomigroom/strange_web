@@ -7,7 +7,13 @@
     font-weight: 900;
 }
 
-div {
+.one {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.one_one {
     width: 200px;
     height: 100px;
     border-radius: 30px;
@@ -20,4 +26,74 @@ div {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.2s ease 0s;
+}
+
+.one_two {
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease 0s;
+}
+
+.one_three_container {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+}
+
+.one_three {
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    transform: translateY(-50%);
+    transition: all 0.6s ease 0s;
+}
+
+.one_three_container:hover .one_three {
+    left: 45%;
+}
+
+.two {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.two_one {
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.6s ease 0s;
+}
+
+.two_two {
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transition: all 0.6s ease 3s;
 }
