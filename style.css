@@ -7,7 +7,7 @@
     font-weight: 900;
 }
 
-.one {
+.section {
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -64,12 +64,6 @@
     left: 45%;
 }
 
-.two {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
-
 .two_one {
     width: 200px;
     height: 100px;
@@ -96,4 +90,106 @@
     top: 25%;
     left: 50%;
     transition: all 0.6s ease 3s;
+}
+
+.two_three_con {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 25%;
+    animation: two_three_con 25s ease 0s infinite;
+}
+
+@keyframes two_three_con {
+    0% {
+        left: 10%;
+    }
+
+    100% {
+        left: 90%;
+    }
+}
+
+.two_three {
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: two_three 5s ease 0s infinite;
+}
+
+@keyframes two_three {
+    0% {
+        transform-origin: 200px 50px;
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        transform-origin: 200px 50px;
+        transform: rotateZ(90deg);
+    }
+
+    37.5% {
+        transform-origin: 100px 0px;
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+        transform-origin: 100px 0px;
+        transform: rotateZ(180deg);
+    }
+
+    62.5% {
+        transform-origin: 0px 50px;
+        transform: rotateZ(180deg);
+    }
+
+    75% {
+        transform-origin: 0px 50px;
+        transform: rotateZ(270deg);
+    }
+
+    87.5% {
+        transform-origin: 100px 100px;
+        transform: rotateZ(270deg);
+    }
+
+    100% {
+        transform-origin: 100px 100px;
+        transform: rotateZ(360deg);
+    }
+}
+
+.three {
+    display: flex;
+}
+
+.three_box {
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    border: 1px solid #333;
+}
+
+.three_one {
+    transition: all 0.6s ease 0s;
+}
+
+.three_two {
+    transition: all 0.6s ease 1s;
+}
+
+.three_three {
+    transition: all 0.6s ease 2s;
+}
+
+.three_four {
+    transition: all 0.6s ease 3s;
+}
+
+.three_five {
+    transition: all 0.6s ease 4s;
 }
