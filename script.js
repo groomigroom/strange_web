@@ -44,3 +44,25 @@ two_one.addEventListener("mouseleave", () => {
     two_one.style.left = "50%";
     two_two.style.left = "50%";
 });
+
+let three_one = document.querySelector(".three_one");
+let three_two = document.querySelector(".three_two");
+let three_three = document.querySelector(".three_three");
+let three_four = document.querySelector(".three_four");
+let three_five = document.querySelector(".three_five");
+
+three_one.addEventListener("mouseenter", () => {
+    three_one.style.margin = "100px";
+    three_two.style.margin = "100px";
+    three_three.style.margin = "100px";
+    three_four.style.margin = "100px";
+    three_five.style.margin = "100px";
+});
+
+three_one.addEventListener("mouseleave", () => {
+    three_one.style.margin = "0px";
+    three_two.style.margin = "0px";
+    three_three.style.margin = "0px";
+    three_four.style.margin = "0px";
+    three_five.style.margin = "0px";
+});
