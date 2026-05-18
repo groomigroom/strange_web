@@ -193,3 +193,73 @@
 .three_five {
     transition: all 0.6s ease 4s;
 }
+
+.three_six {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+.three_six_one {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    transform-origin: 0px 50px;
+    animation: three_six_one 6s ease 0s infinite;
+}
+
+@keyframes three_six_one {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(400%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.three_six_two {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    transform-origin: 0px 50px;
+    animation: three_six_one 6s ease 1s infinite;
+}
+
+.three_six_three {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    transform-origin: 0px 50px;
+    animation: three_six_one 6s ease 2s infinite;
+}
+
+.three_six_four {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    transform-origin: 0px 50px;
+    animation: three_six_one 6s ease 3s infinite;
+}
