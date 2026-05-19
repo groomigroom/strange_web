@@ -66,3 +66,26 @@ three_one.addEventListener("mouseleave", () => {
     three_four.style.margin = "0px";
     three_five.style.margin = "0px";
 });
+
+let three_seven_button = document.querySelector(".three_seven_button");
+let three_seven_input = document.querySelector(".three_seven_input");
+let three_seven_move = document.querySelector(".three_seven_move");
+
+three_seven_button.addEventListener("click", () => {
+    if (three_seven_input.value == 1) {
+        three_seven_move.style.left = "100px"
+        three_seven_move.style.top = "50px"
+    }
+    else if (three_seven_input.value == 2) {
+        three_seven_move.style.top = "100px"
+        three_seven_move.style.left = "50px"
+    }
+    else if (three_seven_input.value == 3) {
+        three_seven_move.style.top = "100px"
+        three_seven_move.style.left = "100px"
+    }
+    else {
+        three_seven_move.style.top = "50px"
+        three_seven_move.style.left = "50px"
+    }
+});
