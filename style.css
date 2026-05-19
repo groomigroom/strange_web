@@ -263,3 +263,24 @@
     transform-origin: 0px 50px;
     animation: three_six_one 6s ease 3s infinite;
 }
+
+.three_seven {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #333;
+    border-radius: 30px;
+    top: 300px;
+    right: 20px;
+}
+
+.three_seven_move {
+    position: absolute;
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    top: 50px;
+    left: 50px;
+    transition: all 0.6s ease 0s;
+}
