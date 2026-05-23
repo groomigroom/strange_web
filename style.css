@@ -529,6 +529,24 @@
     position: absolute;
     top: 300px;
     left: 300px;
+    animation: six_one 2s linear 0s infinite;
+}
+
+@keyframes six_one {
+    0% {
+        border: 5px solid rgb(114, 132, 132);
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border: 30px solid rgb(114, 132, 132);
+        transform: rotate(180deg);
+    }
+
+    100% {
+        border: 5px solid rgb(100, 123, 123);
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -544,9 +562,11 @@
     0% {
         font-size: 16px;
     }
+
     50% {
         font-size: 44px;
     }
+
     100% {
         font-size: 16px;
     }
@@ -580,3 +600,81 @@
     animation: six_one_one 2s ease 0.8s infinite;
 }
 
+.six_two {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(145, 161, 188);
+    position: absolute;
+    top: 300px;
+    right: 300px;
+    border-radius: 30px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.six_two>ul {
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.six_two>ul>li {
+    width: 300px;
+    height: 50px;
+    border: 5px solid rgb(114, 132, 132);
+    border-radius: 30px;
+    position: absolute;
+    transition: all 0.6s ease 0s;
+}
+
+
+
+.six_two>ul>li>a {
+    display: block;
+    width: 300px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.six_two>ul>li:nth-child(1) {
+    top: 0px;
+    left: 0px;
+}
+
+.six_two>ul>li:nth-child(2) {
+    top: 50px;
+    left: 0px;
+}
+
+.six_two>ul>li:nth-child(3) {
+    top: 100px;
+    left: 0px;
+}
+
+.six_two>ul>li:nth-child(4) {
+    top: 150px;
+    left: 0px;
+}
+
+.six_two>ul:hover>li:nth-child(1) {
+    top: -300px;
+    left: -500px;
+}
+
+.six_two>ul:hover>li:nth-child(2) {
+    top: 500px;
+    left: -700px;
+}
+
+.six_two>ul:hover>li:nth-child(3) {
+    top: -250px;
+    left: -400px;
+}
+
+.six_two>ul:hover>li:nth-child(4) {
+    top: 450px;
+    left: -600px;
+}
